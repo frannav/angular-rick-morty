@@ -1,8 +1,13 @@
 <div>
-    <h2>Character View (Master)</h2>
+    <h2>Character View Master</h2>
 </div>
 <div>
     <div>
-        <h4>Title</h4>
+        <h4>Character Name: </h4>
+        <div>
+            <li *ngFor="char of listOfCharacters">
+              {{char.name}}
+            </li>
+        </div>
     </div>
 </div>
